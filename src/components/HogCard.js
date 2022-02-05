@@ -14,12 +14,12 @@ function HogCard({ hog }) {
     
 
 function handleShowInfo(event){
-    setHogInfo(() => !hogInfo)
-}
+    setHogInfo(() => !hogInfo)      
+          }
 
   return (
   <div onClick={handleShowInfo}>
-      <img src={hog.image} />
+      <img src={hog.image} alt="hog pic" style={{'width' : '40%'}}/>
       <h3>{hog.name}</h3>
       {hogInfo ? extraDetails : null}
   </div>);
